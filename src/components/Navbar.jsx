@@ -8,7 +8,7 @@ const Navbar = () => {
   const { isAuth, setIsAuth, setUser } = useContext(AuthContext);
 
   const logoutUser = async () => {
-    const res = await axios.post("http://localhost:5000/api/logout", null, {
+    const res = await axios.post("/logout", null, {
       withCredentials: true,
     });
     if (res.status == 200) {
