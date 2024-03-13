@@ -7,7 +7,7 @@ import Users from "./pages/Users";
 import Navbar from "./components/Navbar";
 import AuthContext from "./context/AuthContext";
 import axios from 'axios';
-axios.defaults.baseURL='https://syno-backend.onrender.com'
+axios.defaults.baseURL='http://localhost:5000'
 axios.defaults.withCredentials=true;
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
